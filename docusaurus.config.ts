@@ -63,6 +63,18 @@ const config: Config = {
       },
       items: [
         {
+          type: 'doc',
+          docId: 'config-sync/getting-started/installation',
+          position: 'left',
+          label: 'Config Sync',
+        },
+        {
+          type: 'doc',
+          docId: 'webtools/intro',
+          position: 'left',
+          label: 'Webtools'
+        },
+        {
           href: 'https://github.com/pluginpal',
           label: 'GitHub',
           position: 'right',
