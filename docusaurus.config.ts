@@ -7,7 +7,9 @@ const config: Config = {
   tagline: "All of Pluginpal's plugin documentation in one place",
   favicon: 'img/favicon.ico',
 
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: [
+    'docusaurus-plugin-sass',
+  ],
 
   // Set the production url of your site here
   url: 'https://docs.pluginpal.io',
@@ -43,8 +45,36 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/pluginpal/docs/tree/main/',
+          admonitions: {
+            keywords: [
+              // Admonitions defaults
+              'note',
+              'tip',
+              'info',
+              'caution',
+              'danger',
+
+              // Admonitions custom
+              'callout',
+              'prerequisites',
+              'strapi',
+              'warning',
+            ],
+          },
         },
         blog: false,
+        sitemap:  {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.6,
+          // ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+          createSitemapItems: async (params) => {
+            const {defaultCreateSitemapItems, ...rest} = params;
+            const items = await defaultCreateSitemapItems(rest);
+            return items;
+          },
+        },
         theme: {
           customCss: './src/scss/__index.scss',
         },

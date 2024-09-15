@@ -4,56 +4,15 @@ displayed_sidebar: configSyncSidebar
 slug: /config-sync/upgrading/generic-update
 ---
 
-# Create a Document
+# Updating Config Sync
 
-Documents are **groups of pages** connected through:
+We are always working to make Config Sync better by fixing bugs and introducing new features. These changes will be released as minor or patch versions as defined in the Semantic Versioning specification.
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+## Bump a minor/patch version
 
-## Create your first Doc
+When you're updating Config Sync you'll have to follow these steps:
 
-Create a Markdown file at `docs/hello.md`:
-
-```md title="docs/hello.md"
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
-
-## Configure the Sidebar
-
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
-
-Add metadata to customize the sidebar label and position:
-
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: 'Hi!'
-sidebar_position: 3
----
-
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-It is also possible to create your sidebar explicitly in `sidebars.js`:
-
-```js title="sidebars.js"
-export default {
-  tutorialSidebar: [
-    'intro',
-    // highlight-next-line
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-};
-```
+1. Make sure there are no config changes before starting. Either export or import all staged changes.
+2. Update the version of the `strapi-plugin-config-sync` package in your `package.json` using your package manager of choice (yarn/npm/pnpm)
+3. After you've bumped the version make sure to export any new changes that are now shown. It is possible that new configs are introduced, or old ones are updated/removed.
+4. You're now ready to push these changes an commit them to your source control!

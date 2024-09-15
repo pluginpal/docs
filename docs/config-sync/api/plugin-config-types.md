@@ -4,33 +4,27 @@ displayed_sidebar: configSyncSidebar
 slug: /config-sync/api/plugin-config-types
 ---
 
-# Create a Blog Post
+# Plugin config types
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
+When you're writing a plugin, which registers a content type, you might want to consider that content type as a config type as defined in the Config Sync specification.
 
-## Create your first Post
+## Register a config type programatically
 
-Create a file at `blog/2021-02-28-greetings.md`:
+You can register a config type by adding some code to the register function of your plugin.
 
-```md title="blog/2021-02-28-greetings.md"
----
-slug: greetings
-title: Greetings!
-authors:
-  - name: Joel Marcey
-    title: Co-creator of Docusaurus 1
-    url: https://github.com/JoelMarcey
-    image_url: https://github.com/JoelMarcey.png
-  - name: Sébastien Lorber
-    title: Docusaurus maintainer
-    url: https://sebastienlorber.com
-    image_url: https://github.com/slorber.png
-tags: [greetings]
----
+```md title="register.js"
+// Register the config type when using the config-sync plugin.
+if (strapi.plugin('config-sync')) {
+  if (!strapi.plugin('config-sync').pluginTypes) {
+    strapi.plugin('config-sync').pluginTypes = [];
+  }
 
-Congratulations, you have made your first post!
-
-Feel free to play around and edit this post as much as you like.
+  strapi.plugin('config-sync').pluginTypes.push({
+    configName: 'url-pattern',
+    queryString: 'plugin::webtools.url-pattern',
+    uid: 'code',
+  });
+}
 ```
 
-A new blog post is now available at [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings).
+If you want to read more about what the different values of a config type actually mean please read the in depth [custom types](/config-sync/config-types#custom-types) docs

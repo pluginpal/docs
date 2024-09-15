@@ -4,6 +4,10 @@ import MDXComponents from '@theme-original/MDXComponents';
 /** Import built-in Docusaurus components at the global level
  * so we don't have to re-import them in every file
  */
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 // Import custom components, globally as well
 import Request from '../components/Request';
 import Response from '../components/Response';
@@ -23,5 +27,7 @@ export default {
   Request,
   Response,
   ApiCall,
+  Tabs,
+  TabItem,
   SubtleCallout,
 };
