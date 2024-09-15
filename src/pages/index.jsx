@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
+// @ts-ignore
 import styles from './home.module.scss';
 import {
   Button,
@@ -15,7 +16,7 @@ import {
   HeroDescription,
   HeroTitle,
   LinkWithArrow,
-} from '../../components';
+} from '../components';
 import content from './_home.content';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
