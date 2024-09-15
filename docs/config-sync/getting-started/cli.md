@@ -17,13 +17,18 @@ Add the `config-sync` command as a script to the `package.json` of your Strapi p
 
 You can now run all the `config-sync` commands like this:
 
-```bash
-# using yarn
-yarn cs --help
-
-# using npm
-npm run cs --help
-```
+<Tabs groupId="yarn-npm">
+  <TabItem value="yarn" label="Yarn">
+    ```
+    yarn cs --help
+    ```
+  </TabItem>
+  <TabItem value="npm" label="NPM">
+    ```
+    npm run cs --help
+    ```
+  </TabItem>
+</Tabs>
 
 ## ⬆️ Import ⬇️ Export
 
@@ -35,15 +40,20 @@ These commands are used to sync the config in your Strapi project.
 
 _Example:_
 
-```bash
-# using yarn
-yarn cs import
-yarn cs export
-
-# using npm
-npm run cs import
-npm run cs export
-```
+<Tabs groupId="yarn-npm">
+  <TabItem value="yarn" label="Yarn">
+    ```
+    yarn cs import
+    yarn cs export
+    ```
+  </TabItem>
+  <TabItem value="npm" label="NPM">
+    ```
+    npm run cs import
+    npm run cs export
+    ```
+  </TabItem>
+</Tabs>
 
 ### Flag: `-y`, `--yes`
 
@@ -85,13 +95,18 @@ This command is used to see the difference between the config as found in the sy
 
 _Example:_
 
-```bash
-# using yarn
-yarn cs diff
-
-# using npm
-npm run cs diff
-```
+<Tabs groupId="yarn-npm">
+  <TabItem value="yarn" label="Yarn">
+    ```
+    yarn cs diff
+    ```
+  </TabItem>
+  <TabItem value="npm" label="NPM">
+    ```
+    npm run cs diff
+    ```
+  </TabItem>
+</Tabs>
 
 ### Argument: `<single>`
 
@@ -99,10 +114,15 @@ Add a single config name as the argument of the `diff` command to see the differ
 
 _Example:_
 
-```bash
-# using yarn
-yarn cs diff user-role.public
-
-# using npm
-npm run cs diff user-role.public
-```
+<Tabs groupId="yarn-npm">
+  <TabItem value="yarn" label="Yarn">
+    ```
+    yarn cs diff user-role.public
+    ```
+  </TabItem>
+  <TabItem value="npm" label="NPM">
+    ```
+    npm run cs diff user-role.public
+    ```
+  </TabItem>
+</Tabs>

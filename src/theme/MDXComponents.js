@@ -13,6 +13,8 @@ import Request from '../components/Request';
 import Response from '../components/Response';
 import ApiCall from '../components/ApiCall';
 import SubtleCallout from '../components/SubtleCallout';
+import CustomDocCard from '../components/CustomDocCard';
+import CustomDocCardsWrapper from '../components/CustomDocCardsWrapper';
 
 export default {
   // Re-use the default mapping
@@ -30,4 +32,6 @@ export default {
   Tabs,
   TabItem,
   SubtleCallout,
+  CustomDocCard,
+  CustomDocCardsWrapper,
 };

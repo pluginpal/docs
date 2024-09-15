@@ -34,7 +34,7 @@ const sidebars = {
     },
     {
       type: "category",
-      collapsed: true,
+      collapsed: false,
       label: "⚙️ Configuration",
       items: [
         "config-sync/configuration/introduction",
@@ -49,18 +49,134 @@ const sidebars = {
     },
     {
       type: "category",
-      collapsed: true,
-      label: "🔌 API",
+      collapsed: false,
+      label: "📦 API",
       items: [
         "config-sync/api/plugin-config-types",
       ],
     },
     {
       type: "category",
-      collapsed: true,
-      label: "📦 Upgrading",
+      collapsed: false,
+      label: "♻️ Upgrading",
       items: [
         "config-sync/upgrading/generic-update",
+      ],
+    },
+  ],
+
+  webtoolsSidebar: [
+    {
+      type: "category",
+      collapsed: false,
+      label: "🚀 Getting Started",
+      items: [
+        "webtools/getting-started/installation",
+        "webtools/getting-started/usage",
+        "webtools/getting-started/url-alias",
+        "webtools/getting-started/url-pattern",
+      ],
+    },
+    {
+      type: "category",
+      collapsed: false,
+      label: "📦 API",
+      items: [
+        "webtools/api/rest",
+        "webtools/api/graphql",
+      ],
+    },
+    {
+      type: "category",
+      collapsed: false,
+      label: "🔌 Addons",
+      items: [
+        "webtools/addons/introduction",
+        {
+          type: "link",
+          label: "Sitemap addon",
+          href: '/webtools/addons/sitemap',
+        },
+      ],
+    },
+    {
+      type: "category",
+      collapsed: false,
+      label: "⚙️ Configuration",
+      items: [
+        "webtools/configuration/introduction",
+        "webtools/configuration/default-pattern",
+        "webtools/configuration/website-url",
+      ],
+    },
+    {
+      type: "category",
+      collapsed: false,
+      label: "♻️ Upgrading",
+      items: [
+        "webtools/upgrading/generic-update",
+      ],
+    },
+  ],
+
+  webtoolsSitemapSidebar: [
+    {
+      type: "link",
+      label: "⬅️ Back to Webtools Core docs",
+      href: "/webtools/addons",
+    },
+    {
+      type: "category",
+      collapsed: false,
+      label: "🔌 Sitemap addon",
+      items: [
+        {
+          type: "category",
+          collapsed: false,
+          label: "🚀 Getting Started",
+          items: [
+            "webtools/addons/sitemap/getting-started/introduction",
+            "webtools/addons/sitemap/getting-started/installation",
+            "webtools/addons/sitemap/getting-started/usage",
+            "webtools/addons/sitemap/getting-started/multilingual",
+            "webtools/addons/sitemap/getting-started/sitemap-index",
+            "webtools/addons/sitemap/getting-started/robots-txt",
+            "webtools/addons/sitemap/getting-started/cli",
+          ],
+        },
+        {
+          type: "category",
+          collapsed: false,
+          label: "📦 API",
+          items: [
+            "webtools/addons/sitemap/api/rest",
+          ],
+        },
+        {
+          type: "category",
+          collapsed: false,
+          label: "⚙️ Settings",
+          items: [
+            "webtools/addons/sitemap/settings/introduction",
+            "webtools/addons/sitemap/settings/hostname",
+            "webtools/addons/sitemap/settings/hostname-overrides",
+            "webtools/addons/sitemap/settings/exclude-drafts",
+            "webtools/addons/sitemap/settings/include-homepage",
+            "webtools/addons/sitemap/settings/default-language-url-type",
+          ],
+        },
+        {
+          type: "category",
+          collapsed: false,
+          label: "🔧 Configuration",
+          items: [
+            "webtools/addons/sitemap/configuration/introduction",
+            "webtools/addons/sitemap/configuration/cron",
+            "webtools/addons/sitemap/configuration/limit",
+            "webtools/addons/sitemap/configuration/xsl",
+            "webtools/addons/sitemap/configuration/auto-generate",
+          ],
+        },
       ],
     },
   ],

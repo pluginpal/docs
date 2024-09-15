@@ -46,15 +46,20 @@ module.exports = ({ env }) => ({
 
 After successful installation you have to rebuild the admin UI so it'll include this plugin. To rebuild and restart Strapi run:
 
-```bash
-# using yarn
-yarn build
-yarn develop
-
-# using npm
-npm run build
-npm run develop
-```
+<Tabs groupId="yarn-npm">
+  <TabItem value="yarn" label="Yarn">
+    ```
+    yarn build
+    yarn develop
+    ```
+  </TabItem>
+  <TabItem value="npm" label="NPM">
+    ```
+    npm run build
+    npm run develop
+    ```
+  </TabItem>
+</Tabs>
 
 The **Config Sync** plugin should now appear in the **Settings** section of your Strapi app.
 

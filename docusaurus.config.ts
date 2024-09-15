@@ -100,7 +100,7 @@ const config: Config = {
         },
         {
           type: 'doc',
-          docId: 'webtools/intro',
+          docId: 'webtools/getting-started/installation',
           position: 'left',
           label: 'Webtools'
         },
