@@ -11,7 +11,7 @@ Complete installation requirements are the exact same as for Strapi itself and c
 
 **Supported Strapi versions:**
 
-Strapi v5 use `@pluginpal/webtools-addon-sitemap@^1`
+<!-- Strapi v5 use `@pluginpal/webtools-addon-sitemap@^1` -->
 
 Strapi v4 use `@pluginpal/webtools-addon-sitemap@^1.0.0-beta`
 
