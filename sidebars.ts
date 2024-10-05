@@ -109,14 +109,14 @@ const sidebars = {
         "webtools/configuration/website-url",
       ],
     },
-    {
-      type: "category",
-      collapsed: false,
-      label: "♻️ Upgrading",
-      items: [
-        "webtools/upgrading/generic-update",
-      ],
-    },
+    // {
+    //   type: "category",
+    //   collapsed: false,
+    //   label: "♻️ Upgrading",
+    //   items: [
+    //     "webtools/upgrading/generic-update",
+    //   ],
+    // },
   ],
 
   webtoolsSitemapSidebar: [

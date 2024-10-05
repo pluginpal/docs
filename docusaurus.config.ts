@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Pluginpal Documentation',
   tagline: "All of Pluginpal's plugin documentation in one place",
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   plugins: [
     'docusaurus-plugin-sass',
@@ -84,12 +84,12 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    // image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'PluginPal Docs',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'PluginPal logo',
+        src: 'img/logo.png',
       },
       items: [
         {
