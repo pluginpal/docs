@@ -58,7 +58,12 @@ _Example:_
 :::info
 When you're using `npm` to run these commands, please note that you need an extra `--` to forward the flags to the script.
 More information about this topic can be found on the <a href="https://docs.npmjs.com/cli/commands/npm-run-script">NPM documentation</a>.
-Example: `npm run cs import -- --yes`
+
+Example:
+```
+npm run cs import -- --yes
+```
+:::
 
 ### Flag: `-y`, `--yes`
 
