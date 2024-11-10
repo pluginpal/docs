@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Pluginpal Documentation',
   tagline: "All of Pluginpal's plugin documentation in one place",
-  favicon: 'img/favicon.png',
+  favicon: 'img/favicon.jpg',
 
   plugins: [
     'docusaurus-plugin-sass',
@@ -161,7 +161,7 @@ const config: Config = {
       apiKey: '2f311b65edaffdd986645eb42d4afa51',
       indexName: 'pluginpal',
     },
-    
+
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
