@@ -19,4 +19,4 @@ Examples of these types are:
 
 This plugin gives you the tools to sync this data. You can export the data as JSON files on one env, and import them on every other env. By writing this data as JSON files you can easily track them in your version control system (git).
 
-_With great power comes great responsibility - Spider-Man_
+_With great power comes great responsibility - Uncle Ben_
