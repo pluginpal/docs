@@ -12,7 +12,7 @@ Complete installation requirements are the exact same as for Strapi itself and c
 
 **Supported Strapi versions:**
 
-<!-- Strapi v5 use `@pluginpal/webtools-core@^1` -->
+Strapi v5 use `strapi-plugin-webtools@^1`
 
 Strapi v4 use `@pluginpal/webtools-core@^1.0.0-beta`
 
@@ -23,12 +23,12 @@ Install the plugin in your Strapi project.
 <Tabs groupId="yarn-npm">
   <TabItem value="yarn" label="Yarn">
     ```
-    yarn add @pluginpal/webtools-core
+    yarn add strapi-plugin-webtools
     ```
   </TabItem>
   <TabItem value="npm" label="NPM">
     ```
-    npm install @pluginpal/webtools-core --save
+    npm install strapi-plugin-webtools --save
     ```
   </TabItem>
 </Tabs>
